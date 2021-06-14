@@ -5,7 +5,7 @@ module.exports = {
     "Ecosystem science, policy, and management informed by the best available data and models",
   url: "https://your-docusaurus-test-site.com",
   baseUrl: "/",
-  onBrokenLinks: "throw",
+  onBrokenLinks: "ignore",
   onBrokenMarkdownLinks: "warn",
   favicon: "img/favicon.ico",
   organizationName: "PEcAn", // Usually your GitHub org/user name.
