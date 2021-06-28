@@ -3,13 +3,13 @@ module.exports = {
   title: "PEcAn Project",
   tagline:
     "Ecosystem science, policy, and management informed by the best available data and models",
-  url: "https://your-docusaurus-test-site.com",
-  baseUrl: "/",
+  url: "https://pecanproject.github.io/web",
+  baseUrl: "/web/",
   onBrokenLinks: "ignore",
   onBrokenMarkdownLinks: "warn",
   favicon: "img/favicon.ico",
-  organizationName: "PEcAn", // Usually your GitHub org/user name.
-  projectName: "PEcAn Project", // Usually your repo name.
+  organizationName: "eshantri", // Usually your GitHub org/user name.
+  projectName: "pecan-website", // Usually your repo name.
   themeConfig: {
     navbar: {
       title: "PEcAn",
@@ -19,9 +19,16 @@ module.exports = {
       },
       items: [
         {
-          to: "docs/1234",
-          position: "left",
           label: "Documentation",
+          position: "left",
+          items: [
+            { to: "/docs/1234", label: "Master", position: "left" },
+            {
+              to: "/docs/docs/welcome",
+              label: "Develop",
+              position: "left",
+            },
+          ],
         },
         { to: "/blog", label: "Blog", position: "left" },
         {
@@ -45,21 +52,20 @@ module.exports = {
           label: "Download",
           position: "left",
         },
-        {
-          type: "docsVersionDropdown",
-          position: "right",
-          dropdownActiveClassDisabled: true,
-          dropdownItemsAfter: [
-            {
-              to: "/versions",
-              label: "All versions",
-            },
-          ],
-        },
+        // {
+        //   type: "docsVersionDropdown",
+        //   position: "right",
+        //   dropdownActiveClassDisabled: true,
+        //   dropdownItemsAfter: [
+        //     {
+        //       to: "/versions",
+        //       label: "All versions",
+        //     },
+        //   ],
+        // },
       ],
     },
     footer: {
-     
       links: [
         {
           title: "Docs",
@@ -113,14 +119,12 @@ module.exports = {
           sidebarPath: require.resolve("./sidebars.js"),
           // Please change this to your repo.
           editUrl:
-            "https://github.com/facebook/docusaurus/edit/master/website/",
+            "https://github.com/PecanProject/web/edit/main",
           versions: {
-   
-              current: {
-                label: 'Develop',
-                path: 'docs',
-              },
-          
+            current: {
+              label: "Develop",
+              path: "docs",
+            },
           },
           onlyIncludeVersions: ["master", "current"], // ex: ["current", "1.0.0", "2.0.0"]
         },
@@ -128,7 +132,7 @@ module.exports = {
           showReadingTime: true,
           // Please change this to your repo.
           editUrl:
-            "https://github.com/facebook/docusaurus/edit/master/website/blog/",
+            "https://github.com/PecanProject/web/edit/main",
         },
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
