@@ -4,7 +4,7 @@ module.exports = {
   tagline:
     "Ecosystem science, policy, and management informed by the best available data and models",
   url: "https://pecanproject.github.io/web",
-  baseUrl: "/web/",
+  baseUrl: "/pecan-website/",
   onBrokenLinks: "ignore",
   onBrokenMarkdownLinks: "warn",
   favicon: "img/favicon.ico",
