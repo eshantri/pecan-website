@@ -1,1 +1,0 @@
-(self.webpackChunkmy_website=self.webpackChunkmy_website||[]).push([[333],{7122:function(e,t,n){"use strict";n.r(t);var i=n(7294),l=n(6016);t.default=function(){return i.createElement(l.Z,{title:"publications"},i.createElement("div",null,i.createElement("h2",{style:{textAlign:"center",margin:"0.5rem"}},"Publications")))}}}]);
