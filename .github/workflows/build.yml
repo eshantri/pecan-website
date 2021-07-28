@@ -1,11 +1,11 @@
-name: deploy
+name: build
 on:
   pull_request:
     branches: [master,main]
   push:
     branches: [master,main]
 jobs:
-  build-and-deploy:
+  build:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout 🛎️
