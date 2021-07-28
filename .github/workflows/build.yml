@@ -7,6 +7,7 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    name: Build Test
     steps:
       - name: Checkout 🛎️
         uses: actions/checkout@v2.3.1
