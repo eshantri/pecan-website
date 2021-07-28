@@ -4,7 +4,7 @@ import Link from "@docusaurus/Link";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import styles from "./index.module.css";
 import HomepageFeatures from "../components/HomepageFeatures";
-
+import BrowserOnly from "@docusaurus/BrowserOnly";
 function HomepageHeader() {
   const { siteConfig } = useDocusaurusContext();
   return (
@@ -31,7 +31,9 @@ export default function Home() {
     >
       <HomepageHeader />
       <main>
-        <HomepageFeatures />
+        <BrowserOnly fallback={<div>Please switch to a browser</div>}>
+          <HomepageFeatures />
+        </BrowserOnly>
       </main>
     </Layout>
   );
