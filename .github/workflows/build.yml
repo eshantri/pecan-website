@@ -1,13 +1,14 @@
 name: build
 on:
   pull_request:
-    branches: [master,main]
+    branches: [master, main]
   push:
-    branches: [master,main]
+    branches: [master, main]
 jobs:
+  name: Build Test
   build:
     runs-on: ubuntu-latest
-    name: Build Test
+
     steps:
       - name: Checkout 🛎️
         uses: actions/checkout@v2.3.1
