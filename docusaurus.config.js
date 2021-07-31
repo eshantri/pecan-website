@@ -22,11 +22,10 @@ module.exports = {
           label: "Documentation",
           position: "left",
           items: [
-            { to: "/docs/1234", label: "Master", position: "left" },
+            { to: "/docs/1234", label: "Master" },
             {
               to: "/docs/docs/welcome",
               label: "Develop",
-              position: "left",
             },
           ],
         },
@@ -35,10 +34,10 @@ module.exports = {
           label: "About",
           position: "left",
           items: [
-            { to: "/about", label: "About", position: "left" },
-            { to: "/people", label: "People", position: "left" },
-            { to: "/news", label: "News", position: "left" },
-            { to: "/workshops", label: "Workshops", position: "left" },
+            { to: "/about", label: "About" },
+            { to: "/people", label: "People" },
+            { to: "/news", label: "News" },
+            { to: "/workshops", label: "Workshops" },
           ],
         },
         {
@@ -118,8 +117,7 @@ module.exports = {
         docs: {
           sidebarPath: require.resolve("./sidebars.js"),
           // Please change this to your repo.
-          editUrl:
-            "https://github.com/PecanProject/web/edit/main",
+          editUrl: "https://github.com/PecanProject/web/edit/main",
           versions: {
             current: {
               label: "Develop",
@@ -131,8 +129,7 @@ module.exports = {
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
-          editUrl:
-            "https://github.com/PecanProject/web/edit/main",
+          editUrl: "https://github.com/PecanProject/web/edit/main",
         },
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
