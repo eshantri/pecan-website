@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkmy_website=self.webpackChunkmy_website||[]).push([[9619],{7040:function(e){e.exports=JSON.parse('{"allTagsPath":"/pecan-website/blog/tags","slug":"facebook","name":"facebook","count":1,"permalink":"/pecan-website/blog/tags/facebook"}')}}]);
